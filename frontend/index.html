@@ -1,0 +1,22 @@
+<!doctype html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#fbfbf9" />
+    <meta name="description" content="Mạch — phần mềm quản lý tài chính cho doanh nghiệp Việt: kết nối tài khoản ngân hàng, quản lý thẻ, duyệt chi, thanh toán hoá đơn, xuất hoá đơn và sổ sách kế toán trong một nơi. Bản demo, dữ liệu mô phỏng." />
+    <title>Mạch — Phần mềm quản lý tài chính doanh nghiệp</title>
+    <script>
+      try {
+        var t = (JSON.parse(localStorage.getItem('mach-ui') || '{}').state || {}).theme || 'system';
+        var d = t === 'dark' || (t === 'system' && matchMedia('(prefers-color-scheme: dark)').matches);
+        if (d) document.documentElement.classList.add('dark');
+      } catch (e) {}
+    </script>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
+</html>
