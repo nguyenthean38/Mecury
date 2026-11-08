@@ -13,6 +13,8 @@
 
 > ⚠️ Đây là **sản phẩm demo giao diện** do [Ntahien Tech](https://ntahientech.com) thiết kế và lập trình. Toàn bộ dữ liệu (công ty, người dùng, ngân hàng, số tài khoản, giao dịch) là **dữ liệu mô phỏng**. Mạch không phải ngân hàng hay tổ chức tín dụng, không giữ tiền và không xử lý giao dịch thật. Tên ngân hàng như "Thịnh An", "Lạc Hồng" là hư cấu.
 
+🔗 **Demo:** https://mecury.vercel.app — bấm **"Dùng tài khoản demo"** ở trang đăng nhập (hoặc mở thẳng [/dang-nhap?demo=1](https://mecury.vercel.app/dang-nhap?demo=1)).
+
 ![Tổng quan](docs/screenshots/02-tong-quan.jpg)
 
 ## Ảnh giao diện
