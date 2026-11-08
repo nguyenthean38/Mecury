@@ -107,7 +107,7 @@ export default function SignupPage() {
         {errors.password && <StrengthMeter password={f.password} />}
         <div className="flex flex-col gap-1">
           <Checkbox checked={f.agree} onChange={set('agree')}
-            label={<>Tôi đồng ý với <a href="/#hoi-dap" className="font-[550] text-brand-ink hover:underline" target="_blank" rel="noreferrer" onClick={(e) => e.stopPropagation()}>Điều khoản sử dụng</a> và <a href="/#bao-mat" className="font-[550] text-brand-ink hover:underline" target="_blank" rel="noreferrer" onClick={(e) => e.stopPropagation()}>Chính sách quyền riêng tư</a> của Mạch.</>} />
+            label={<>Tôi đồng ý với <a href={import.meta.env.BASE_URL + '#hoi-dap'} className="font-[550] text-brand-ink hover:underline" target="_blank" rel="noreferrer" onClick={(e) => e.stopPropagation()}>Điều khoản sử dụng</a> và <a href={import.meta.env.BASE_URL + '#bao-mat'} className="font-[550] text-brand-ink hover:underline" target="_blank" rel="noreferrer" onClick={(e) => e.stopPropagation()}>Chính sách quyền riêng tư</a> của Mạch.</>} />
           {errors.agree && <p className="text-[12.5px] text-neg pl-7">{errors.agree}</p>}
         </div>
         <Button type="submit" variant="primary" size="lg" loading={busy} iconRight={busy ? undefined : ArrowRight} className="w-full mt-1">

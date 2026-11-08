@@ -51,4 +51,4 @@ export const router = createBrowserRouter([
     ],
   },
   { path: '*', element: L(() => import('@/pages/public/NotFoundPage')) },
-])
+], { basename: import.meta.env.BASE_URL.replace(/\/$/, '') || '/' })
